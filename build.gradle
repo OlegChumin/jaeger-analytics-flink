@@ -53,9 +53,6 @@ subprojects {
         compile 'net.logstash.logback:logstash-logback-encoder'
         compile 'org.slf4j:log4j-over-slf4j'
 
-        compileOnly 'org.projectlombok:lombok:1.18.28'
-        annotationProcessor 'org.projectlombok:lombok:1.18.28'
-
         compileOnly "org.apache.flink:flink-java"
         compileOnly "org.apache.flink:flink-streaming-java_2.12"
         compileOnly "org.apache.flink:flink-streaming-scala_2.12"
@@ -70,8 +67,8 @@ subprojects {
     }
 
     repositories {
-//        jcenter()
-        mavenCentral()
+        jcenter()
+//        mavenCentral()
     }
 }
 
